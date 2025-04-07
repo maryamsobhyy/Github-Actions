@@ -1,0 +1,11 @@
+name: test-syntax 
+family:
+  father: sobhy
+  mother: hala
+  childern:
+     sons:
+       - menna
+       - bassam
+      
+     dauthers: 
+     - reem
