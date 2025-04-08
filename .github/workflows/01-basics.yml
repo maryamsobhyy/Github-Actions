@@ -6,7 +6,5 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Log in to Huawei Cloud SWR
-        uses: huaweicloud/swr-login@v2.1.0
+    
 
