@@ -1,0 +1,10 @@
+name: 02-basics first workflow
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "hello"
