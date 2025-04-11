@@ -1,0 +1,14 @@
+name: 02-basics first workflow
+
+on: 
+   pull_request:
+      types:
+        - closed
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "hello"
