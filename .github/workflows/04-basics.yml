@@ -1,5 +1,7 @@
-name: External trigger 
-on: 
+name: External trigger
+on:
+repository_dispatch:
+  types: [test_result]
 
 jobs:
   build:
