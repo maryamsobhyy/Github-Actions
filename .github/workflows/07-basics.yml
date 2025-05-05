@@ -1,0 +1,11 @@
+name: 06-basics first workflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo ${{ toJson(github) }} }}
