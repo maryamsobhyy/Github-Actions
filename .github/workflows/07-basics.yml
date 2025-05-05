@@ -1,5 +1,5 @@
 name: 07-basics first workflow
-run-name: ${{github.actor  }} explaning data 
+run-name: ${{github.actor  }} explaning data and this is ${{github.run_number  }}
 
 on:
   workflow_dispatch
