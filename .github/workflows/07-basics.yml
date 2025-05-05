@@ -1,4 +1,4 @@
-name: 06-basics first workflow
+name: 07-basics first workflow
 
 on:
   workflow_dispatch
