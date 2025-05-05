@@ -1,0 +1,12 @@
+name: 08-basics first workflow
+run-name: ${{ github.actor  }} explaning Conditions and this is ${{ github.run_number  }}
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo ${{ toJson(github.event) }} }}
