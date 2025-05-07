@@ -10,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN:'Maryam sobhy'
     steps:
       - name: Print Hello
         run: echo $GITHUB_TOKEN
+      - name: Print Hello
+        run: echo ${{env.GITHUB_TOKEN}}
