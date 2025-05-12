@@ -1,0 +1,19 @@
+name: 010-basics first workflow
+run-name: ${{ github.actor  }} explaning Conditions and this is ${{ github.run_number  }}
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }} }}
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN:'Maryam sobhy'
+    steps:
+      - name: Print Hello
+        run: echo $GITHUB_TOKEN
+      - name: Print Secrets
+        run: echo ${{secrets.MY_PASSWORD}}
