@@ -1,7 +1,4 @@
 name: 011-basics first workflow
-run-name: ${{ github.actor  }} explaning Conditions and this is ${{ github.run_number  }}
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }} }}
 on:
   workflow_dispatch
 
