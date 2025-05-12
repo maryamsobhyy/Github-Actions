@@ -6,8 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN:'Maryam sobhy'
     steps:
       - name: Print Secrets
         run: echo ${{secrets.MY_PASSWORD}}
