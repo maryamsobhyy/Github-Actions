@@ -3,8 +3,8 @@ run-name: ${{ github.actor  }} explaning Conditions and this is ${{ github.run_n
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }} }}
 on:
-  repository_dispatch:
-    types: [test_result]
+  workflow_dispatch
+
 
 jobs:
   build:
