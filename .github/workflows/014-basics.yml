@@ -1,14 +1,14 @@
 name: 014-basics first workflow
-on:
-  workflow_dispatch
-
+on: workflow_dispatch
 
 jobs:
   open-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: simulate testing  failure
-        run: echo ${{ toJson(secrets) }}
+      - name: simulate testing failure
+        run: |
+          echo '${{ toJson(secrets) }}'
+
 
 
       # - name: open new issue 
