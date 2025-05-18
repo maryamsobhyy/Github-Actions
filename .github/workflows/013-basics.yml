@@ -1,0 +1,13 @@
+name: 013-basics first workflow
+on:
+  workflow_dispatch
+env:
+  RUN_NUMBER: ${{ github.run_number > 1 && format('{0}', '1') || format('{0}', '0') }}
+
+
+jobs:
+  open-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: simulate testing  failure
+        run: echo ${{ env.RUN_NUMBER }}
