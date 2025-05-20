@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
-      max-parallelism: 2
+      max-parallel: 2
       matrix:
         os: [windows-latest,ubuntu-latest]
         php_version: [7.4,8.0,8.2]
