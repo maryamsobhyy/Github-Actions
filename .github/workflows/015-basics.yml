@@ -1,0 +1,19 @@
+name: 015-basics first workflow
+
+on:
+  workflow_dispatch
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest,ubuntu-latest]
+    steps:
+      - name: build project
+        run: echo "build project on os (${{ matrix.os }})"
+
